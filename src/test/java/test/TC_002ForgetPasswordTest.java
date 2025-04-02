@@ -25,7 +25,7 @@ public class TC_002ForgetPasswordTest extends ProjectSpecificationMethod {
         forgetPasswordPage.enterEmailId("validuser@example.com")
                           .clickSubmit();
 
-        // Assume successful message appears (modify as per actual app behavior)
+        // Assume successful message appears 
         String expectedMessage ="Email Address does not exsit in database";
         Assert.assertEquals(forgetPasswordPage.getErrorMessage(), expectedMessage, "Password reset not successful.");
     }
