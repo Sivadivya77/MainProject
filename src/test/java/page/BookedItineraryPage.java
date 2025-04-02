@@ -12,7 +12,7 @@ import base.ProjectSpecificationMethod;
 
 public class BookedItineraryPage extends ProjectSpecificationMethod {
 	
-	 // Page header element (to verify navigation)
+	 // Page header element 
     @FindBy(xpath = "//td[@class='login_title']")
     private WebElement pageHeader;
     
@@ -32,7 +32,7 @@ public class BookedItineraryPage extends ProjectSpecificationMethod {
     @FindBy(xpath  = "//td[@align='right']//table")
     private WebElement bookedTable;
     
-    // Error message element (if no records found)
+    // Error message element 
     @FindBy(xpath = "//label[@id='search_result_error']")
     private WebElement errorMessage;
     
@@ -59,7 +59,7 @@ public class BookedItineraryPage extends ProjectSpecificationMethod {
         return pageHeader.isDisplayed();
     }
     
-    // Verify that header buttons are clickable (can be used in a separate test)
+    // Verify that header buttons are clickable 
     public void verifyHeaderButtonsAreClickable() {
         if(!searchHotelBtn.isDisplayed() || !searchHotelBtn.isEnabled()) {
             throw new RuntimeException("Search Hotel button not clickable");
@@ -85,7 +85,7 @@ public class BookedItineraryPage extends ProjectSpecificationMethod {
     	  searchButton.click();
     }
     
-    // Returns the error message if search yields no records
+    // Returns the error message 
     public String getErrorMessage() {
         try {
             return errorMessage.getText();
