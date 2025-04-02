@@ -18,7 +18,7 @@ public class SelectHotelPage extends ProjectSpecificationMethod {
 	        PageFactory.initElements(driver, this);
 	    }
 
-	    // Web Elements using @FindBy
+	
 	    @FindBy(xpath = "//input[@id='radiobutton_1']")
 		public WebElement firstHotelRadioButton;
 
