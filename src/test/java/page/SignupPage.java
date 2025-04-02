@@ -18,7 +18,7 @@ import base.ProjectSpecificationMethod;
 
 public class SignupPage extends ProjectSpecificationMethod {
 	
-	 // Input Fields
+	
     @FindBy(id = "username")
     private WebElement username;
 
@@ -123,7 +123,7 @@ public class SignupPage extends ProjectSpecificationMethod {
     }
 
 
-    // **Fetch all error messages dynamically**
+    // Fetch all error messages dynamically
     public String getAllErrorMessages() {
         List<String> errors = new ArrayList<>();
 
@@ -139,7 +139,7 @@ public class SignupPage extends ProjectSpecificationMethod {
         return String.join(" | ", errors);
     }
 
-    // Helper method to check if an element is visible
+    //  method to check if an element is visible
     private boolean isElementVisible(WebElement element) {
         try {
             return wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
