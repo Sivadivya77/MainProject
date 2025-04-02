@@ -18,7 +18,7 @@ import base.ProjectSpecificationMethod;
 
 public class DownloadPage extends ProjectSpecificationMethod {
 	
-	// Locators using @FindBy
+	// Locators 
     @FindBy(xpath = "//a[contains(text(),'DOWNLOAD')]")
     private WebElement hotelAppLink;
 
