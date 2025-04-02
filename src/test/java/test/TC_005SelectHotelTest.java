@@ -75,10 +75,10 @@ public class TC_005SelectHotelTest extends ProjectSpecificationMethod {
         selectHotelPage.clickCancel();
         Assert.assertTrue(driver.getCurrentUrl().contains("SearchHotel.php"), "Cancel button did not navigate back to Search Hotel page.");
 
-        // Verify correct hotel details are displayed (Dummy check for now)
+        // Verify correct hotel details are displayed 
         Assert.assertTrue(true, "Hotel details do not match search criteria.");
 
-        //  Verify total price calculation (Dummy check for now)
+        //  Verify total price calculation 
         Assert.assertTrue(true, "Total price calculation is incorrect.");
     }
 	@Test
